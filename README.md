@@ -1,6 +1,6 @@
-# Welcome to the wpbrsmedia theme!
+# Welcome to the wpbrsmedia thecivilindia theme!
 
-Thank you for contributing to the project we all love! Your participation is vital to the WordPress theme project.
+This theme is drived from basic wpbrsmedia theme. Thank you for contributing to the project we all love! Your participation is vital to the WordPress theme project.
 
 ## Developer Notes for Theme Development Contribution
 
