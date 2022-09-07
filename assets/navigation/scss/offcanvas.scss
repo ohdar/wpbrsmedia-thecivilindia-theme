@@ -1,0 +1,24 @@
+// OFFCANVAS version 3.0
+// =====================
+
+@import 'import/_offcanvas-variables';
+@import 'import/_offcanvas-base';
+@import 'import/_offcanvas-navicon';
+@import 'import/_offcanvas-options';
+@import 'import/_offcanvas-styling';
+
+body {
+	@include offcanvas-push-right;
+}
+
+/*
+Example media query - to hide Offcanvas on screen widths above 768px.
+
+@media (min-width: 768px) {
+	#offcanvas-navicon,
+	#offcanvas-overlay,
+	#offcanvas-sidebar {
+		display: none;
+	}
+}
+*/

@@ -1,0 +1,99 @@
+/*
+* WPBRSMEDIA THEME CSS
+* Custom Meun CSS
+*/
+
+div.custom-footer-menu h3 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: none;
+  color: #0c62a5;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+div.custom-footer-menu h3::before {
+  content: '';
+  border-top: 1px solid #333333;
+  width: 170px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+div.custom-footer-menu h3::after {
+  background: #0c80a5;
+  content: '';
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+}
+
+div.custom-menu-class ul {
+    margin:0px 10px 10px 0px;
+  	padding:0px;
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+    display: block;   
+}
+div.custom-menu-class li {
+  	margin:5px 10px 10px 0px;
+    padding: 5px 20px 0px 0px;
+    display: block;  	
+	border-top: 1px solid #333333;
+  
+} 
+ 
+div.custom-menu-class a { 
+   	color: #FF9900 !important;
+	outline: none;
+	text-decoration: none;
+}
+
+div.custom-menu-class a:hover { 
+   	color: #06538b !important;
+	outline: none;
+	text-decoration: none;
+}
+
+/* Second Line */
+
+div.custom-menu-class li ul {
+    margin:0px 10px 10px 0px;
+  	padding:0px;
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+    display: block;   
+}
+div.custom-menu-class li ul li {
+  	margin:5px 10px 10px 0px;
+    padding: 5px 20px 0px 0px;
+    display: block;  	
+	border-top: 1px solid #333333;
+  
+} 
+ 
+div.custom-menu-class li ul li a { 
+   	color: #FF9900 !important;
+	outline: none;
+	text-decoration: none;
+}
+
+div.custom-menu-class li ul li a:hover { 
+   	color: #06538b !important;
+	outline: none;
+	text-decoration: none;
+}
+
+
+
+
