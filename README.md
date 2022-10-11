@@ -1,6 +1,6 @@
 # Introduction 
 
-This theme is currently used by https://wpcms.thecivilindia.com . You can watch Live theme by visiting given website link.
+This theme is currently used by https://www.thecivilindia.com . You can watch Live theme by visiting given website link.
 
 # Welcome to the wpbrsmedia thecivilindia theme!
 
