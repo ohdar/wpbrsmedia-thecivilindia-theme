@@ -41,6 +41,11 @@ require get_template_directory().'/inc/indiatourism.php';
 require get_template_directory().'/inc/technologies.php';
 //Custom Post Types Youtube Channel Videos
 require get_template_directory().'/inc/ytchannel.php';
+//Custom Post Types Hindi Stories
+require get_template_directory() .'/inc/hindistories.php';
+
+//Custom Post Types Food Industries of India
+require get_template_directory() .'/inc/naturalfoodindustry.php';
 
 
 
@@ -82,4 +87,3 @@ function tags_after_single_post_content($content) {
   return $content;
 }
 add_filter( 'the_content', 'tags_after_single_post_content' );
-

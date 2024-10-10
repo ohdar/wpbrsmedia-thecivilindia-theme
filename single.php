@@ -15,14 +15,31 @@ get_header() ?>
                             the_post(); ?>
                             <!-- Content -->
                             <article class="box post">
-                                <a href="<?php the_permalink() ?>" class="image featured">
-                                    <?php the_post_thumbnail('single-post') ?>
-                                </a>
+                          		
+                          		<?php 
+                                     if ( has_post_thumbnail() ) { 
+                          				echo '<figure style="float:right; margin:1em; padding:1em; border: 2px solid #0c62a5; border-radius: 10px;">';
+                          		}?>
+                          			 <a href="<?php the_permalink() ?>" class="">
+                                          <?php 
+                                              if ( has_post_thumbnail() ) {
+                                                  the_post_thumbnail('custom-administration-post');                                                   
+                                          }?>
+                                     </a> 
+                          			<?php 
+                          				  if ( has_post_thumbnail() ) {
+                          				  $image_id = get_post_thumbnail_id();
+                                          $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+                                          $image_title = get_the_title($image_id);
+                                    	  echo '<figcaption style="text-align: center; color: #333333; text-transform: uppercase; font-weight: 400;">';
+                                          echo $image_title;
+                                          echo '</figcaption>';
+                                          echo '</figure>';
+                          				}?>                                   
                                 <header>
                                     <h2><?php the_title() ?></h2>
                                 </header>
-
-                                <?php the_content() ?>
+                          		<?php the_content() ?>
 								
                           		
                             </article>

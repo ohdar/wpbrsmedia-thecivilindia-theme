@@ -1,10 +1,6 @@
-# Introduction 
+# Welcome to the wpbrsmedia theme!
 
-This theme is currently used by https://www.thecivilindia.com . You can watch Live theme by visiting given website link.
-
-# Welcome to the wpbrsmedia thecivilindia theme!
-
-This theme is drived from basic wpbrsmedia theme. Thank you for contributing to the project we all love! Your participation is vital to the WordPress theme project.
+Thank you for contributing to the project we all love! Your participation is vital to the WordPress theme project.
 
 ## Developer Notes for Theme Development Contribution
 

@@ -238,9 +238,9 @@ Kirki::add_field('wpbrsmedia_options', [
 Kirki::add_field('wpbrsmedia_options', [
     'type'     => 'text',
     'settings' => 'home_banner_heading_text',
-    'label'    => esc_html__('Banner Heading', 'kirki'),
+    'label'    => esc_html__('Banner Heading Text', 'kirki'),
     'section'  => 'homepage_settings',
-    'default'  => esc_html__('Howdy. This is Dopetrope.', 'kirki'),
+    'default'  => esc_html__('Howdy. This is WPBRSMEDIA Theme.', 'kirki'),
     'priority' => 10,
 ]);
 
@@ -250,7 +250,7 @@ Kirki::add_field('wpbrsmedia_options', [
     'settings' => 'home_banner_paragraph_text',
     'label'    => esc_html__('Banner Pragarph Text', 'kirki'),
     'section'  => 'homepage_settings',
-    'default'  => esc_html__('A responsive template by HTML5 UP.', 'kirki'),
+    'default'  => esc_html__('A responsive template by WPBRSMEDIA Theme.', 'kirki'),
     'priority' => 10,
 ]);
 

@@ -57,6 +57,46 @@ function leadersmenu() {
 
 }
 add_action( 'init', 'leadersmenu' );
+// 4a. Register custom navigation menus
+function politicalleadersmenu() {
+
+	$locations = array(
+		'politicalleadersmenu' => __( 'Political Leaders Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+
+}
+add_action( 'init', 'politicalleadersmenu' );
+// 4b. Register custom navigation menus
+function corporateleadersmenu() {
+
+	$locations = array(
+		'corporateleadersmenu' => __( 'Corporate Leaders Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+
+}
+add_action( 'init', 'corporateleadersmenu' );
+// 4c. Register custom navigation menus
+function socialleadersmenu() {
+
+	$locations = array(
+		'socialleadersmenu' => __( 'Social Leaders Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+
+}
+add_action( 'init', 'socialleadersmenu' );
+// 4d. Register custom navigation menus
+function martyrsleadersmenu() {
+
+	$locations = array(
+		'martyrsleadersmenu' => __( 'Martyrs Leaders Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+
+}
+add_action( 'init', 'martyrsleadersmenu' );
 
 // 5. Register custom navigation menus
 function businessmenu() {

@@ -4,12 +4,18 @@
 */
 
 ?>
-
 <div class="col-3 col-12-medium">
 <?php dynamic_sidebar('main-sidebar') ?>
-<div class="col-12 ">
 
-				<!-- Blog -->
+<div class="col-12 ">
+<!-- CURRENT AFFAIRS MENU -->
+				<section class="box">
+                 <div class="col-2 col-12-small custom-footer-menu">								
+					<header><h3>Current Affairs</h3></header>
+					<?php wp_nav_menu( array( 'theme_location' => 'currentaffairsmenu', 'container_class' => 'custom-menu-class' ) ); ?>
+				 </div>
+                </section> 				
+<!-- Youtube Video Blog -->
 				<section>
 					<!-- <header class="major"><h2>OUR YOUTUBE CHANNEL</h2></header> -->
 					<div class="row">
@@ -40,6 +46,8 @@
                             } ?>
 					</div>
 				</section>	
+				
+
 </div>
 
 <?php
@@ -82,23 +90,25 @@ echo '</ul></div></section></div>';
         // Reset Post Data
         wp_reset_postdata();
  ?>
- 
 
-<!-- Article By Month and Catagory List -->
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar 1') ) : ?>
-<?php echo '<div class="col-12">'; ?>
-<?php echo '<section><header class="major"><h2>Other Resources</h2> </header>'; ?>
-<?php echo '<div class="box col-12" style="padding:0px; margin:0px">'; ?>
-<?php echo '<ul class="">'; ?>
-		   <h3>Articles by month</h3>
-		   <ul>
-			  <?php wp_get_archives('title_li=&type=monthly'); ?>
-		   </ul>
-		   <h3>Categories</h3>
-		   <ul>
-			  <?php wp_list_categories('show_count=0&title_li='); ?>
-		   </ul>
-<?php echo '</ul></div></section></div>'; ?>
-<?php endif; ?>
-<!-- Article By Month and Catagory List -->
+<!-- ---------- Invitation to add your contribution ------------- -->
+<?php
+	echo '<div class="col-3 col-12-medium" style="padding:0px; margin-top:10px"><section class="box">';						
+	echo '<h3>Invitation to add your contribution</h3>';
+	echo '<p>This is an invitation to add your contribution from your skill-set to share your knowledge. We have started a platform benefiting to various to know good and effective solution by sharing of relevant information with our community.</p>';
+	echo '<a href="https://www.thecivilindia.com/invitation-to-add-your-contribution/" class="button alt">Read More</a>';
+	echo '</section></div>';
+?>
+<!-- ---------- Invitation to add your contribution ------------- -->
+ 
+<!-- ---------- Consider Donations ------------- -->
+<?php
+echo '<div class="col-3 col-12-medium" style="padding:0px; margin-top:10px"><section class="box">';						
+echo '<h3>Consider Donations</h3>';
+echo '<p>Various people have asked me how they can contribute and donate to this project. As a consequence, I have created a way to accept hosting donations in Gpay. If you appreciate the work that goes into keeping this community going, please consider making a small donation!</p>';
+echo '<a href="https://www.thecivilindia.com/consider-donations/" class="button alt">Read More</a>';
+echo '</section></div>';
+?>
+<!-- ---------- Consider Donations ------------- -->
+
 </div>

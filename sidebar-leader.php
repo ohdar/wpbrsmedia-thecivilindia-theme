@@ -48,27 +48,34 @@
 				<section class="box">
                  <div class="col-2 col-12-small custom-footer-menu">								
 					<header><h3>Martyrs</h3></header>
-					<?php wp_nav_menu( array( 'theme_location' => 'leadersmenu', 'container_class' => 'custom-menu-class' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'martyrsleadersmenu', 'container_class' => 'custom-menu-class' ) ); ?>
 				 </div>
                 </section> 
 				<!-- POLITICAL LEADERS MENU -->
 				<section class="box">
                  <div class="col-2 col-12-small custom-footer-menu">								
 					<header><h3>Political Leaders</h3></header>
-					<?php wp_nav_menu( array( 'theme_location' => 'leadersmenu', 'container_class' => 'custom-menu-class' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'politicalleadersmenu', 'container_class' => 'custom-menu-class' ) ); ?>
 				 </div>
                 </section>
 				<!-- CORPORATE LEADERS MENU -->
 				<section class="box">
                  <div class="col-2 col-12-small custom-footer-menu">								
 					<header><h3>Corporate Leaders</h3></header>
-					<?php wp_nav_menu( array( 'theme_location' => 'leadersmenu', 'container_class' => 'custom-menu-class' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'corporateleadersmenu', 'container_class' => 'custom-menu-class' ) ); ?>
 				 </div>
                 </section> 
 				<!-- SOCIAL LEADERS MENU -->
 				<section class="box">
                  <div class="col-2 col-12-small custom-footer-menu">								
 					<header><h3>Social Leaders</h3></header>
+					<?php wp_nav_menu( array( 'theme_location' => 'socialleadersmenu', 'container_class' => 'custom-menu-class' ) ); ?>
+				 </div>
+                </section> 
+				<!-- LEADERS MENU -->
+				<section class="box">
+                 <div class="col-2 col-12-small custom-footer-menu">								
+					<header><h3>Leaders</h3></header>
 					<?php wp_nav_menu( array( 'theme_location' => 'leadersmenu', 'container_class' => 'custom-menu-class' ) ); ?>
 				 </div>
                 </section> 

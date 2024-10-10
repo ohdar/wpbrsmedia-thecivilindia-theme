@@ -17,7 +17,7 @@ get_header() ?>
                             <!-- Content -->
                             <article class="box post">
                                 <a href="<?php the_permalink() ?>" class="image featured">
-                                    <?php the_post_thumbnail('single-post') ?>
+                                    <?php the_post_thumbnail('single-post-tourism') ?>
                                 </a>
                                 <header>
                                     <h2><?php the_title() ?></h2>

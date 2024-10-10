@@ -4,10 +4,10 @@
 */
 
 ?>
-			<!-- Footer -->
-            <section id="footer">
-					<div class="container">
-						<div class="row">							
+<!-- Footer -->
+<section id="footer">
+	<div class="container">
+			<div class="row">							
 							<div class="col-2 col-12-small custom-footer-menu">								
 								<header><h3>Administration</h3></header>
 								<?php wp_nav_menu( array( 'theme_location' => 'administrationmenu', 'container_class' => 'custom-menu-class' ) ); ?>
@@ -33,25 +33,26 @@
 								<?php wp_nav_menu( array( 'theme_location' => 'infrastructuremenu', 'container_class' => 'custom-menu-class' ) ); ?>
 							</div>
 							
-						</div>
-					</div>
-				</section>
-<section style="background:#333;">
-					<div class="container">
-						<div class="row">
-<div class="col-12">
+				</div>
+		</div>
+</section>
+<!-- Signature -->
+<section style="background:#333; margin-top:-1em;">
+<div class="container">
+	<div class="row">
+		<div class="col-12">
 
 								<!-- Trademark -->
 									<div id="trademark" style="background:#333;">
 										<ul class="links">										
-										<li><a href="https://wpcms.thecivilindia.com/disclaimer/">Disclaimer</a></li>
-										<li><a href="https://wpcms.thecivilindia.com/privacy-policy-new/">Privacy Policy</a></li>
-										<li><a href="https://wpcms.thecivilindia.com/copyrights-and-trademarks/">Copyright &amp; Trademark</a></li>
+										<li><a href="https://www.thecivilindia.com/disclaimer/">Disclaimer</a></li>
+										<li><a href="https://www.thecivilindia.com/privacy-policy-new/">Privacy Policy</a></li>
+										<li><a href="https://www.thecivilindia.com/copyrights-and-trademarks/">Copyright &amp; Trademark</a></li>
     									</ul>
 									</div>
 
-							</div>
-							<div class="col-12">
+		</div>
+		<div class="col-12">
 
 								<!-- Copyright -->
 									<div id="copyright">
@@ -60,13 +61,11 @@
 										</ul>
 									</div>
 
-							</div>
-							</div>
-
-							</div>
-</section>
 		</div>
-
+</div>
+</div>
+</section>
+</div>
     <?php wp_footer() ?>
-	</body>
+</body>
 </html>

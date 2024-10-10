@@ -11,6 +11,8 @@ function wpbrsmedia_theme_setup()
     add_theme_support('post-thumbnails');
     add_image_size('home-featured', 580, 300, array('center', 'center'));
     add_image_size('single-post', 1200, 600, array('center', 'center'));
+    add_image_size('single-post-tourism', 1200, 600, array('center', 'center'));
+  	add_image_size('custom-administration-post', 250, 250, array('center', 'center'));
     
     
     add_theme_support('automatic-feed-links');

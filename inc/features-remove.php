@@ -46,14 +46,17 @@ function mytheme_admin_bar_render()
 add_action('wp_before_admin_bar_render', 'mytheme_admin_bar_render');
 
 
-// Remove unneeded menus
+
+ //---------------------
+  // Remove unneeded menus
 function sc_remove_menus()
 {
     // setup the global menu variable
     global $menu;
     // this is an array of the menu item names we wish to remove
     //$restricted = array( __('Links'),__('Tools'),__('Comments'), __('Media'), __('Settings'));
-    $restricted = array( __('Tools'), __('Settings'));
+    $restricted = array( __('Plugins'), __('Tools'), __('Comments'));
+    //$restricted = array( __('Tools'), __('Settings'));
     //$restricted = array( __('Tools'));
     end($menu);
     while (prev($menu)) {
@@ -65,3 +68,4 @@ function sc_remove_menus()
 }
 // hook into the action that creates the menu
 add_action('admin_menu', 'sc_remove_menus');
+//--------------------------------------  

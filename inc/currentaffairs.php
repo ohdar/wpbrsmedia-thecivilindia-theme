@@ -38,7 +38,7 @@ function create_currentaffair_cpt() {
 		'description' => __( '', 'textdomain' ),
 		'labels' => $labels,
 		'menu_icon' => 'dashicons-welcome-view-site',
-		'supports' => array(),
+		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author', 'comments', 'trackbacks', 'custom-fields'),
 		'taxonomies' => array('category', 'post_tag'),
 		'public' => true,
 		'show_ui' => true,

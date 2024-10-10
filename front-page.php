@@ -389,42 +389,7 @@
 
 				
 
-					<!-- Education in India -->
-					<section>
-						<header class="major">
-							<h2>Tourist Place in India</h2>
-						</header> 
-						<div class="row">
-							<?php
-								$blog_args = array(
-									'post_type'	=> 'indiatourism',
-									'posts_per_page'	=> 4
-								);
-								$blog_posts = new WP_Query($blog_args);
-								while ($blog_posts->have_posts()) {
-									$blog_posts->the_post(); ?>
-							<div class="col-3 col-12-small">
-								<section class="box">
-									<a href="<?php the_permalink() ?>" class="image featured">
-										<?php the_post_thumbnail('home-featured') ?>
-									</a>
-									<header>
-										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>	
-									</header>
-									<?php the_excerpt() ?>
-									<footer>
-										<ul class="actions">
-											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
-											
-										</ul>
-									</footer>
-								</section>
-							</div>
-							<?php
-								} ?>
-							
-						</div>
-					</section>
+					
 					<!-- Technology -->
 					<section>
 						<header class="major">
