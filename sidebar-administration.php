@@ -50,7 +50,14 @@
 					<header><h3>Administration</h3></header>
 					<?php wp_nav_menu( array( 'theme_location' => 'administrationmenu', 'container_class' => 'custom-menu-class' ) ); ?>
 				 </div>
-                </section>          
+                </section>     
+				<!-- CITY PROFILE MENU -->
+				<section class="box">
+                 <div class="col-2 col-12-small custom-footer-menu">								
+					<header><h3>Cities of India</h3></header>
+					<?php wp_nav_menu( array( 'theme_location' => 'cityprofilemenu', 'container_class' => 'custom-menu-class' ) ); ?>
+				 </div>
+                </section>  
 				<!-- MAJOR GOVT. PROGRAM MENU -->
 				<section class="box">
                  <div class="col-2 col-12-small custom-footer-menu">								

@@ -164,5 +164,16 @@ function technologymenu() {
 }
 add_action( 'init', 'technologymenu' );
 
+// 11. Register custom navigation menus
+function cityprofilemenu() {
+
+	$locations = array(
+		'cityprofilemenu' => __( 'City Profile Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+
+}
+add_action( 'init', 'cityprofilemenu' );
+
 
 

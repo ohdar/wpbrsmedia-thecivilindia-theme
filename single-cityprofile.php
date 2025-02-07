@@ -1,6 +1,7 @@
 <?php
 /*
-* This is our first theme single.php
+* This is used to display about us single pages
+* Template Name: Single cityprofile
 */
 
 get_header() ?>
@@ -48,9 +49,6 @@ get_header() ?>
                     }
                 ?>
 
-
-
-
 <div class="col-12 ">
 
 				<!-- Blog -->
@@ -88,13 +86,13 @@ get_header() ?>
 						<?php
                             } ?>
 						
-				<!-- YOUTUBE CHANNEL -->
+<!-- YOUTUBE CHANNEL -->
 				<section>
 					<header class="major"><h2>IF YOU FIND SOME HELP CONSIDER CONTRIBUTING BY SHARING CONTENT OF OUR CHANNEL </h2></header>
 					<div class="row">
 						<?php
                             $blog_args = array(
-                                'post_type'	=> 'ytchannel',								
+                                'post_type'	=> 'ytchannel',
 								'orderby' => 'rand',
                                 'posts_per_page'	=> 8,	
                             );
@@ -119,9 +117,9 @@ get_header() ?>
                               wp_reset_postdata();
                             } ?>
 					</div>
-		</section>		
-				
-			<!-- IMPORTANT ARTICLES -->
+		</section>
+
+		<!-- IMPORTANT ARTICLES -->
 				<section>
 					<header class="major"><h2>Important Articles </h2></header>
 					<div class="row">

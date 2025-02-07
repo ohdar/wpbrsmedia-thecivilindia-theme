@@ -5,16 +5,31 @@
 
 ?>
 <div class="col-3 col-12-medium">
-<?php dynamic_sidebar('main-sidebar') ?>
+<?php //dynamic_sidebar('main-sidebar') ?>
 
 <div class="col-12 ">
+<!-- CITY PROFILE MENU -->
+				<section class="box">
+                 <div class="col-2 col-12-small custom-footer-menu">								
+					<header><h3>Cities of India</h3></header>
+					<?php wp_nav_menu( array( 'theme_location' => 'cityprofilemenu', 'container_class' => 'custom-menu-class' ) ); ?>
+				 </div>
+                </section>  
 <!-- CURRENT AFFAIRS MENU -->
 				<section class="box">
                  <div class="col-2 col-12-small custom-footer-menu">								
 					<header><h3>Current Affairs</h3></header>
 					<?php wp_nav_menu( array( 'theme_location' => 'currentaffairsmenu', 'container_class' => 'custom-menu-class' ) ); ?>
 				 </div>
-                </section> 				
+                </section> 		
+
+<!-- TECHNOLOGY MENU -->
+				<section class="box">
+                 <div class="col-2 col-12-small custom-footer-menu">								
+					<header><h3>Technologies</h3></header>
+					<?php wp_nav_menu( array( 'theme_location' => 'technologymenu', 'container_class' => 'custom-menu-class' ) ); ?>
+				 </div>
+                </section> 
 <!-- Youtube Video Blog -->
 				<section>
 					<!-- <header class="major"><h2>OUR YOUTUBE CHANNEL</h2></header> -->
@@ -104,11 +119,13 @@ echo '</ul></div></section></div>';
 <!-- ---------- Consider Donations ------------- -->
 <?php
 echo '<div class="col-3 col-12-medium" style="padding:0px; margin-top:10px"><section class="box">';						
-echo '<h3>Consider Donations</h3>';
-echo '<p>Various people have asked me how they can contribute and donate to this project. As a consequence, I have created a way to accept hosting donations in Gpay. If you appreciate the work that goes into keeping this community going, please consider making a small donation!</p>';
+echo '<h3>Support “The Civil India” – Building Stronger Communities Together</h3>';
+echo '<p>Welcome to The Civil India, a website dedicated to empowering and uplifting communities across the nation. We believe in the collective strength of individuals coming together to create positive change, and we invite you to be a part of this transformative journey. If you appreciate the work that goes into keeping this community going, please consider making a small donation!</p>';
 echo '<a href="https://www.thecivilindia.com/consider-donations/" class="button alt">Read More</a>';
 echo '</section></div>';
 ?>
 <!-- ---------- Consider Donations ------------- -->
+
+
 
 </div>

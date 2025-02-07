@@ -75,17 +75,18 @@
 
 							
 
-					<!--Administration -->
+					<!--City Profiles -->
 					<section>
 						<header class="major">
-							<h2>Administration </h2>
+							<h2>City Profiles </h2>
 						</header>
 						<div class="row">
 
 							<?php
 								$service_args = array(
-									'post_type'	=> 'administration',
-									'posts_per_page'	=> 4
+									'post_type'	=> 'cityprofile',
+									'posts_per_page'	=> 4,
+									'orderby' => 'rand',
 									//'order' => 'ASC'
 								);
 								$service_posts = new WP_Query($service_args);
@@ -125,6 +126,7 @@
 							<?php
 								$portfolio_args = array(
 									'post_type'	=> 'politics',
+									'orderby' => 'rand',
 									'posts_per_page'	=> 4
 								);
 								$portfolio_posts = new WP_Query($portfolio_args);
@@ -164,6 +166,7 @@
 							<?php
 								$portfolio_args = array(
 									'post_type'	=> 'education',
+									'orderby' => 'rand',
 									'posts_per_page'	=> 4
 								);
 								$portfolio_posts = new WP_Query($portfolio_args);
@@ -203,6 +206,7 @@
 							<?php
 								$portfolio_args = array(
 									'post_type'	=> 'leader',
+									'orderby' => 'rand',
 									'posts_per_page'	=> 4
 								);
 								$portfolio_posts = new WP_Query($portfolio_args);
@@ -242,6 +246,7 @@
 							<?php
 								$portfolio_args = array(
 									'post_type'	=> 'business',
+									'orderby' => 'rand',
 									'posts_per_page'	=> 4
 								);
 								$portfolio_posts = new WP_Query($portfolio_args);
@@ -281,6 +286,7 @@
 							<?php
 								$portfolio_args = array(
 									'post_type'	=> 'banking',
+									'orderby' => 'rand',
 									'posts_per_page'	=> 4
 								);
 								$portfolio_posts = new WP_Query($portfolio_args);
@@ -320,6 +326,7 @@
 							<?php
 								$portfolio_args = array(
 									'post_type'	=> 'infrastructure',
+									'orderby' => 'rand',
 									'posts_per_page'	=> 4
 								);
 								$portfolio_posts = new WP_Query($portfolio_args);
@@ -359,6 +366,7 @@
 							<?php
 								$portfolio_args = array(
 									'post_type'	=> 'indiatourism',
+									'orderby' => 'rand',
 									'posts_per_page'	=> 4
 								);
 								$portfolio_posts = new WP_Query($portfolio_args);
@@ -399,6 +407,7 @@
 							<?php
 								$blog_args = array(
 									'post_type'	=> 'technology',
+									'orderby' => 'rand',
 									'posts_per_page'	=> 4
 								);
 								$blog_posts = new WP_Query($blog_args);
@@ -426,6 +435,46 @@
 							
 						</div>
 					</section>
+
+					<!-- Banking -->
+					<section>
+						<header class="major">
+							<h2>Hindi Stories & Poems</h2>
+						</header>
+						<div class="row">
+
+							<?php
+								$portfolio_args = array(
+									'post_type'	=> 'hindistory',
+									'orderby' => 'rand',
+									'posts_per_page'	=> 4
+								);
+								$portfolio_posts = new WP_Query($portfolio_args);
+								while ($portfolio_posts->have_posts()) {
+									$portfolio_posts->the_post(); ?>
+							<div class="col-3 col-12-small">
+								<section class="box">
+									<a href="<?php the_permalink() ?>" class="image featured">
+									<?php the_post_thumbnail('home-featured') ?>
+									</a>
+									<header>
+										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+									</header>
+									<?php the_excerpt() ?>
+									<footer>
+										<ul class="actions">
+											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+										</ul>
+									</footer>
+								</section>
+							</div>
+							<?php
+								} ?>
+							<?php wp_reset_postdata() ?>
+							
+						</div>
+					</section> 
+
 					<!-- Major Govt Programs -->
 					<section>
 						<header class="major">
@@ -435,6 +484,7 @@
 							<?php
 								$blog_args = array(
 									'post_type'	=> 'govtprogram',
+									'orderby' => 'rand',
 									'posts_per_page'	=> 4
 								);
 								$blog_posts = new WP_Query($blog_args);

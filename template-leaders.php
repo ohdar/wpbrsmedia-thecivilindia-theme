@@ -20,7 +20,7 @@ get_header() ?>
                                     <?php the_post_thumbnail('single-post') ?>
                                 </a>
                                 <header>
-                                    <h2><?php the_title() ?></h2>
+                                    <h1><?php the_title() ?></h1>
                                 </header>
 
                                 <?php the_content() ?>
@@ -54,11 +54,11 @@ get_header() ?>
                                 $angelsoft_posts->the_post(); ?>
 						<div class="col-3 col-6-medium col-12-small">
 							<section class="box">
-								<a href="<?php the_permalink() ?>" class="image featured">
+								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
                                     <?php the_post_thumbnail('single-post') ?>
 								</a>
 								<header>
-									<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><h3><?php the_title() ?></h3></a>
 								</header>
 								<?php the_excerpt() ?>
 								<footer>
@@ -95,11 +95,11 @@ get_header() ?>
                                 $angelsoft_posts->the_post(); ?>
 						<div class="col-3 col-6-medium col-12-small">
 							<section class="box">
-								<a href="<?php the_permalink() ?>" class="image featured">
+								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
                                     <?php the_post_thumbnail('single-post') ?>
 								</a>
 								<header>
-									<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><h3><?php the_title() ?></h3></a>
 								</header>
 								<?php the_excerpt() ?>
 								<footer>
@@ -137,11 +137,11 @@ get_header() ?>
                                 $angelsoft_posts->the_post(); ?>
 						<div class="col-3 col-6-medium col-12-small">
 							<section class="box">
-								<a href="<?php the_permalink() ?>" class="image featured">
+								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
                                     <?php the_post_thumbnail('single-post') ?>
 								</a>
 								<header>
-									<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><h3><?php the_title() ?></h3></a>
 								</header>
 								<?php the_excerpt() ?>
 								<footer>
@@ -178,11 +178,11 @@ get_header() ?>
                                 $angelsoft_posts->the_post(); ?>
 						<div class="col-3 col-6-medium col-12-small">
 							<section class="box">
-								<a href="<?php the_permalink() ?>" class="image featured">
+								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
                                     <?php the_post_thumbnail('single-post') ?>
 								</a>
 								<header>
-									<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><h3><?php the_title() ?></h3></a>
 								</header>
 								<?php the_excerpt() ?>
 								<footer>

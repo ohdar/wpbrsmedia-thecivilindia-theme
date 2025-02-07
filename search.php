@@ -13,14 +13,17 @@ get_header() ?>
                     if(have_posts()) {
                         while(have_posts()) {
                             the_post(); ?>
-                            <div class="col-6 col-12-small">
+                            <div class="col-3 col-6-medium col-12-small">
                                 <section class="box">
-                                    <a href="<?php the_permalink() ?>" class="image featured">
-                                        <?php the_post_thumbnail('home-featured') ?>
-                                    </a>
+                                   	<a href="<?php the_permalink() ?>" class="image left">
+                          				
+                                    		<?php the_post_thumbnail( array(200,200) ); ?>
+                          				
+                                	</a>
                                     <header>
+                          				<p>Published on <?php the_date() ?></p>
                                         <h3><?php the_title() ?></h3>
-                                        <p>Posted on <?php the_date() ?> at <?php the_time() ?></p>
+                                        
                                     </header>
                                     <?php the_excerpt() ?>
                                     <footer>

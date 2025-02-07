@@ -7,28 +7,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>    	
+
+<!-- Other meta tags like charset, etc. -->
+
+    <?php // include get_template_directory() . '/seo-meta-tags.php'; ?>
+
+<!-- Other head elements like stylesheets, scripts, etc. -->
+
 		<meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />        
-        <meta name="keywords" content="India's first & largest Portal for latest updates, history, results of the Parliamentary and the Assembly of India, Current, accurate and in-depth facts on India, Unique cultural information provided." />
-        <meta name="link" href="http://www.thecivilindia.com/" />
-        <meta name="coverage" content="Worldwide" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />        
+        <meta name="description" content="India's first & largest Portal for latest updates, history, results and the Assembly of India,Current, accurate and in depth facts on India." />
+        <meta name="keywords" content="India's first & largest Portal for latest updates, history, results of the Parliamentary and the Assembly of India, Current, accurate and in depth facts on India. Unique cultural information provided.">
+        <meta name="linkage" content="http://www.thecivilindia.com/">
+        <meta name="coverage" content="Worldwide">
+        <meta name="msnbot" content="INDEX,FOLLOW" />
         <meta name="robots" content="Index,Follow" />
+        <meta name="robots" content="ALL">
         <meta name="rating" content="GENERAL" />
         <meta name="distribution" content="GLOBAL" />
         <meta name="copyright" content="BRS MEDIA" />
         <meta name="owner" content="BRS MEDIA" />
+        <meta name="alias" content="BRS MEDIA" />
         <meta name="language" content="en-us" />
         <meta name="document-type" content="Public" />
         <meta name="classification" content="India" />
         <meta name="designer" content="BRS MEDIA" />
         <meta name="identifier-URL" content="http://www.thecivilindia.com" />
         <meta name="revisit-after" content="3 days" />
+        <meta name="MSSmartTagsPreventParsing" content="true" />
         <meta name="category" content="India, Industry, Public Transport, Tourism, Development" />
         <meta name="subjects" content="India, Industry, Public Transport, Tourism, Development" />
-        <meta http-equiv="Expires" content="0" />
-        <meta http-equiv="Pragma" content="no-cache" />
-        <meta http-equiv="Cache-Control" content="no-cache" />
-		
+        <meta name="viewport" content="width=device-width"> 
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache"> 
+
+
 
 		<meta name="google-site-verification" content="9xqfPtKGofTmmjcUNy6_Zm47lTxtl6N8lrzcO4PzRMk" /> 
 		<meta name=“msvalidate.01” content="1870327E2DECB39769DB599DD1ADEE83" />

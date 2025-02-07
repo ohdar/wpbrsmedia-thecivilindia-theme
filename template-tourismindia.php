@@ -20,7 +20,7 @@ get_header() ?>
                                     <?php the_post_thumbnail('single-post-tourism') ?>
                                 </a>
                                 <header>
-                                    <h2><?php the_title() ?></h2>
+                                    <h1><?php the_title() ?></h1>
                                 </header>
 
                                 <?php the_content() ?>
@@ -50,11 +50,11 @@ get_header() ?>
                                 $angelsoft_posts->the_post(); ?>
 						<div class="col-3 col-6-medium col-12-small">
 							<section class="box">
-								<a href="<?php the_permalink() ?>" class="image featured">
+								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
                                     <?php the_post_thumbnail('single-post') ?>
 								</a>
 								<header>
-									<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><h3><?php the_title() ?></h3></a>
 								</header>
 								<?php the_excerpt() ?>
 								<footer>
@@ -69,6 +69,7 @@ get_header() ?>
 						
 					</div>
 				</section>
+				
 <!-- Pagination -->
 				<section>
 					
@@ -95,7 +96,49 @@ get_header() ?>
 					</div>						
 					</h3></div>
 				</section>
-<!-- Pagination -->             
+<!-- Pagination -->   
+
+<!-- Cityprofiles -->
+				<section>
+					<header class="major">
+							<h2>City Profiles</h2>
+						</header>
+					<p>A city is a dynamic urban area characterized by dense populations, diverse cultures, and a wide range of industries. It offers amenities like entertainment, education, and transportation. Cities are often economic, cultural, and political hubs, with landmarks, public spaces, and a variety of lifestyles shaping daily life.</p>
+					
+					
+					<div class="row">
+
+
+						<?php
+                            $angelsoft_args = array(
+                                'post_type'	=> 'cityprofile',
+                                'orderby' => 'rand',
+                                'posts_per_page'	=> 8
+                            );
+                            $angelsoft_posts = new WP_Query($angelsoft_args);
+                            while ($angelsoft_posts->have_posts()) {
+                                $angelsoft_posts->the_post(); ?>
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="box">
+								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+                                    <?php the_post_thumbnail('single-post') ?>
+								</a>
+								<header>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><h3><?php the_title() ?></h3></a>
+								</header>
+								<?php the_excerpt() ?>
+								<footer>
+									<ul class="actions">
+										<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+									</ul>
+								</footer>
+							</section>
+						</div>
+						<?php
+                            } ?>						
+						
+					</div>
+				</section>
 
             </div>
             <?php get_sidebar("indiatourism") ?> 	

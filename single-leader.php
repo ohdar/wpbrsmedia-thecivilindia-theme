@@ -1,6 +1,7 @@
 <?php
 /*
-* This is our first theme single.php
+* This is used to display about us single pages
+* Template Name: Single Leaders
 */
 
 get_header() ?>
@@ -16,26 +17,7 @@ get_header() ?>
                             <!-- Content -->
                             <article class="box post">
                           		
-                          		<?php 
-                                     if ( has_post_thumbnail() ) { 
-                          				echo '<figure style="float:right; margin:1em; padding:1em; border: 2px solid #0c62a5; border-radius: 10px;">';
-                          		}?>
-                          			 <a href="<?php the_permalink() ?>" class="">
-                                          <?php 
-                                              if ( has_post_thumbnail() ) {
-                                                  the_post_thumbnail('custom-administration-post');                                                   
-                                          }?>
-                                     </a> 
-                          			<?php 
-                          				  if ( has_post_thumbnail() ) {
-                          				  $image_id = get_post_thumbnail_id();
-                                          $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
-                                          $image_title = get_the_title($image_id);
-                                    	  echo '<figcaption style="text-align: center; color: #333333; text-transform: uppercase; font-weight: 400;">';
-                                          echo $image_title;
-                                          echo '</figcaption>';
-                                          echo '</figure>';
-                          				}?>                                   
+                          		                                 
                                 <header>
                           			
                                     <h1><?php the_title() ?></h1>
@@ -49,8 +31,6 @@ get_header() ?>
                 ?>
 
 
-
-
 <div class="col-12 ">
 
 				<!-- Blog -->
@@ -61,7 +41,8 @@ get_header() ?>
 					<div class="row">
 						<?php
                             $blog_args = array(                                
-								'post_type'	=> get_post_type( $post->ID ), // Related Article as per post catagory 'post_type' => 'administration',
+								'post_type'	=> get_post_type( $post->ID ), // Related Article as per post catagory 
+								'post_type' => 'administration',
 								'orderby' => 'rand',
                                 'posts_per_page'	=> 4,	
                             );
@@ -88,13 +69,13 @@ get_header() ?>
 						<?php
                             } ?>
 						
-				<!-- YOUTUBE CHANNEL -->
+<!-- YOUTUBE CHANNEL -->
 				<section>
 					<header class="major"><h2>IF YOU FIND SOME HELP CONSIDER CONTRIBUTING BY SHARING CONTENT OF OUR CHANNEL </h2></header>
 					<div class="row">
 						<?php
                             $blog_args = array(
-                                'post_type'	=> 'ytchannel',								
+                                'post_type'	=> 'ytchannel',
 								'orderby' => 'rand',
                                 'posts_per_page'	=> 8,	
                             );
@@ -119,9 +100,9 @@ get_header() ?>
                               wp_reset_postdata();
                             } ?>
 					</div>
-		</section>		
-				
-			<!-- IMPORTANT ARTICLES -->
+		</section>
+
+		<!-- IMPORTANT ARTICLES -->
 				<section>
 					<header class="major"><h2>Important Articles </h2></header>
 					<div class="row">

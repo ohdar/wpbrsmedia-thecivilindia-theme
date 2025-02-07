@@ -21,6 +21,7 @@ get_header()
                                     <?php the_post_thumbnail('single-post') ?>
                                 </a>
                                 <header>
+                          			
                                     <h2><?php the_title() ?></h2>
                                 </header>
 
