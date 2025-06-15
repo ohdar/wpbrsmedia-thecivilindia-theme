@@ -175,5 +175,175 @@ function cityprofilemenu() {
 }
 add_action( 'init', 'cityprofilemenu' );
 
+// 12. Register custom navigation menus
+function stateprofilemenu() {
+
+	$locations = array(
+		'stateprofilemenu' => __( 'State Profile Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+
+}
+add_action( 'init', 'stateprofilemenu' );
+
+// 13. Register custom navigation menus Agrifoods
+function agrifoodsmenu() {
+
+	$locations = array(
+		'agrifoodsmenu' => __( 'Agricultural Foods Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+
+}
+add_action( 'init', 'agrifoodsmenu' );
+
+// 14. Register custom navigation menus Treefoods
+function treefoodsmenu() {
+
+	$locations = array(
+		'treefoodsmenu' => __( 'Tree Foods Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+
+}
+add_action( 'init', 'treefoodsmenu' );
+
+
+// 15. Register custom navigation menus
+
+// 15. Mythology
+function mythologymenu() {
+	$locations = array(
+		'mythologymenu' => __( 'Mythology Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'mythologymenu' );
+
+// 16. Yoga
+function yogamenu() {
+	$locations = array(
+		'yogamenu' => __( 'Yoga Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'yogamenu' );
+
+// 17. Ayurveda
+function ayurvedamenu() {
+	$locations = array(
+		'ayurvedamenu' => __( 'Ayurveda Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'ayurvedamenu' );
+
+// 18. Healthcare
+function healthcaremenu() {
+	$locations = array(
+		'healthcaremenu' => __( 'Healthcare Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'healthcaremenu' );
+
+// 19. Animal Kingdom
+function animalkingdommenu() {
+	$locations = array(
+		'animalkingdommenu' => __( 'Animal Kingdom Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'animalkingdommenu' );
+
+// 20. Plant Kingdom
+function plantkingdommenu() {
+	$locations = array(
+		'plantkingdommenu' => __( 'Plant Kingdom Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'plantkingdommenu' );
+
+// 21. School Profile
+function schoolprofilemenu() {
+	$locations = array(
+		'schoolprofilemenu' => __( 'School Profile Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'schoolprofilemenu' );
+
+// 22. Company Profile
+function companyprofilemenu() {
+	$locations = array(
+		'companyprofilemenu' => __( 'Company Profile Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'companyprofilemenu' );
+
+// 23. Non-Profit Organization
+function nonprofitorgmenu() {
+	$locations = array(
+		'nonprofitorgmenu' => __( 'Non-Profit Organization Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'nonprofitorgmenu' );
+
+// 24. Government Organization
+function govtorganizationmenu() {
+	$locations = array(
+		'govtorganizationmenu' => __( 'Government Organization Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'govtorganizationmenu' );
+
+// 25. Ministry Profile
+function ministryprofilemenu() {
+	$locations = array(
+		'ministryprofilemenu' => __( 'Ministry Profile Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'ministryprofilemenu' );
+
+// 26. Business Plan
+function businessplanmenu() {
+	$locations = array(
+		'businessplanmenu' => __( 'Business Plan Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'businessplanmenu' );
+
+// 27. Food Recipes
+function foodrecipesmenu() {
+	$locations = array(
+		'foodrecipesmenu' => __( 'Food Recipes Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'foodrecipesmenu' );
+
+// 28. Food indianrivers
+function indianriversmenu() {
+	$locations = array(
+		'indianriversmenu' => __( 'Indian Rivers Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'indianriversmenu' );
+
+// 29. Multipurpose Menu for More Links
+function multipurposemenu() {
+	$locations = array(
+		'multipurposemenu' => __( 'Multipurpose Menu', 'wpbrsmedia' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'multipurposemenu' );
 
 

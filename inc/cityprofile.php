@@ -48,7 +48,7 @@ function create_cityprofile_cpt() {
 		'show_in_nav_menus' => true,
 		'can_export' => true,
 		'has_archive' => true,
-		'hierarchical' => false,
+		'hierarchical' => true,
 		'exclude_from_search' => false,
 		'show_in_rest' => true,
 		'publicly_queryable' => true,

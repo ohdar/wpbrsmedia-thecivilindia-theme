@@ -1766,7 +1766,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #1e62bc;
+			background: #5D0E0E;
 		}
 
 			input[type="button"].alt:hover,
@@ -1838,7 +1838,10 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			margin: 0 2em 2em 0;
+			width: 220px !important;
+        	height: 220px !important;
+			margin: 0 2em 2em 0 !important;
+          	padding-right:0 2em 0 0 !important;
 		}
 		
 		
@@ -2216,8 +2219,7 @@ input, select, textarea {
 
 		
 
-/* Nav */
-
+/* Nav --------------- -------------*/
 	#nav {
 		margin: 1.5em 0 0 0;
 		height: 60px;
@@ -2253,7 +2255,6 @@ input, select, textarea {
 					outline: 0;
 					display: inline-block;
 					height: 100%;
-					border-radius: 0;
 					line-height: 60px;
 					font-family: 'Roboto Condensed', sans-serif;
 					font-size: 16px;
@@ -2278,11 +2279,18 @@ input, select, textarea {
 	}
 	.sub-menu {
 		border-radius: 0;
-		background-color: rgba(34, 30, 31, 0.9);
+		/*background-color: rgba(229, 162, 1 , 0.9); */
+		background: #ff9900; 
+		margin:0px;    /* error resolved dropdown */
 		padding: 1.25em 1.5em 1.25em 1.5em;
-		font-style: normal;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 16px;
+		font-weight:700;
+		text-transform: uppercase;
+		/*font-style: normal;*/
 		min-width: 13em;
 		box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.5);
+		border-radius: 0 0 5px 5px;
 		text-align: left;
         list-style: none;
         position: absolute;
@@ -2298,7 +2306,7 @@ input, select, textarea {
 	#nav > ul > li:hover > .sub-menu {
 		display: block;
 	}
-	#nav > ul > .sub-menu > li:hover > .sub-menu > {
+	#nav > ul > .sub-menu > li:hover > .sub-menu  {
 		display: block;
 		position: absolute;
 	}
@@ -2314,7 +2322,12 @@ input, select, textarea {
 
 	.sub-menu li:hover > a, .sub-menu li:hover > span {
 		color: #fff;
-	}
+	} 
+	
+
+
+	
+
 
 /* Banner */
 
@@ -3007,7 +3020,7 @@ input, select, textarea {
   color: #fff !important;
   border-top-color: #3395ff !important;
   border-bottom-color: #0062cc !important;
-  background-color: #007bff !important;
+  background-color: #721313 !important;
 }
 
 @media screen and (max-width: 1485px) {
@@ -3026,7 +3039,7 @@ input, select, textarea {
   color: #fff !important;
   border-top-color: #3395ff !important;
   border-bottom-color: #0062cc !important;
-  background-color: #007bff !important;
+  background-color: #721313 !important;
 }
 }
 @media screen and (max-width: 736px) {
@@ -3045,7 +3058,7 @@ input, select, textarea {
   color: #fff !important;
   border-top-color: #3395ff !important;
   border-bottom-color: #0062cc !important;
-  background-color: #007bff !important;
+  background-color: #721313 !important;
 }
 }
 @media screen and (max-width: 980px) {
@@ -3064,7 +3077,7 @@ input, select, textarea {
   color: #fff !important;
   border-top-color: #3395ff !important;
   border-bottom-color: #0062cc !important;
-  background-color: #007bff !important;
+  background-color: #721313 !important;
 }
 }
 @media screen and (max-width: 1280px) {
@@ -3083,7 +3096,7 @@ input, select, textarea {
   color: #fff !important;
   border-top-color: #3395ff !important;
   border-bottom-color: #0062cc !important;
-  background-color: #007bff !important;
+  background-color: #721313 !important;
 }
 }
 @media screen and (max-width: 1680px) {
@@ -3102,7 +3115,7 @@ input, select, textarea {
   color: #fff !important;
   border-top-color: #3395ff !important;
   border-bottom-color: #0062cc !important;
-  background-color: #007bff !important;
+  background-color: #721313 !important;
 }
 }
 
@@ -3111,3 +3124,18 @@ input, select, textarea {
   width: 200px !important;
   height: 200px !important;
 }
+
+.adsense-container {
+    display: block;
+    margin-top: 0px; /* Space above the ad */
+    margin-bottom: 0px; /* Space below the ad */
+    padding: 0px; /* Optional: Padding inside the container */
+    text-align: center; /* Optional: Center the ad */
+}
+
+.adsbygoogle {
+    display: block;
+    width: 80%; /* Adjust width if needed */
+    height: auto; /* Adjust height if needed */
+}
+

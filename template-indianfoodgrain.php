@@ -32,15 +32,16 @@ get_header() ?>
                 <?php wp_reset_postdata() ?>
 
             
-                <!-- Education -->
+                <!-- Food Grains -->
 				<section>
-					
+					<header class="major">	<h2>Sustainable Agricultural Foods</h2>	</header>
 					<div class="row">
 
 
 						<?php
                             $angelsoft_args = array(
                                 'post_type'	=> 'naturalfood',
+								'category_name' => 'food-grains',
                                 'orderby' => 'rand',
                                 'posts_per_page'	=> 20,
 								'paged' => $paged
@@ -51,7 +52,7 @@ get_header() ?>
 						<div class="col-3 col-6-medium col-12-small">
 							<section class="box">
 								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
-                                    <?php the_post_thumbnail('single-post') ?>
+                                    <?php the_post_thumbnail('custom-stateprofile-post') ?>
 								</a>
 								<header>
 									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><h3><?php the_title() ?></h3></a>
@@ -59,13 +60,14 @@ get_header() ?>
 								<?php the_excerpt() ?>
 								<footer>
 									<ul class="actions">
-										<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+										<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 									</ul>
 								</footer>
 							</section>
 						</div>
 						<?php
-                            } ?>						
+                            } ?>	
+						<?php wp_reset_postdata() ?>
 						
 					</div>
 				</section>
@@ -95,10 +97,146 @@ get_header() ?>
 					</div>						
 					</h3></div>
 				</section>
-<!-- Pagination -->             
+<!-- Pagination -->     
+
+  <!-- Tree Foods -->
+				<section>
+				<header class="major">	<h2>Sustainable Tree-based Foods</h2>	</header>
+					
+					<div class="row">
+
+
+						<?php
+                            $angelsoft_args = array(
+                                'post_type'	=> 'naturalfood',
+								'category_name' => 'tree-based-foods',
+                                'orderby' => 'rand',
+                                'posts_per_page'	=> 20,
+								'paged1' => $paged
+                            );
+                            $angelsoft_posts = new WP_Query($angelsoft_args);
+                            while ($angelsoft_posts->have_posts()) {
+                                $angelsoft_posts->the_post(); ?>
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="box">
+								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+                                    <?php the_post_thumbnail('custom-stateprofile-post') ?>
+								</a>
+								<header>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><h3><?php the_title() ?></h3></a>
+								</header>
+								<?php the_excerpt() ?>
+								<footer>
+									<ul class="actions">
+										<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
+									</ul>
+								</footer>
+							</section>
+						</div>
+						<?php
+                            } ?>	
+						<?php wp_reset_postdata() ?>
+						
+					</div>
+				</section>
+<!-- Pagination -->
+				<section>
+					
+					<div class="boxpaging"><h3>
+					<div style="margin: auto;  width: 20%;  border: 0px solid green;  padding: 10px;">
+                      <?php
+                      $total_pages = $angelsoft_posts->max_num_pages;
+
+                          if ($total_pages > 1){
+
+                              $current_page = max(1, get_query_var('paged1'));
+
+                              echo paginate_links(array(
+                                  'base' => get_pagenum_link(1) . '%_%',
+                                  'format' => '/page/%#%',
+                                  'current' => $current_page,
+                                  'total' => $total_pages,
+                                  'prev_text'    => __('« prev'),
+                                  'next_text'    => __('next »'),
+                              ));
+                          }
+                      ?>
+						<?php wp_reset_postdata() ?>
+					</div>						
+					</h3></div>
+				</section>
+<!-- Pagination -->  
+
+<!-- Tree Foods -->
+				<section>
+				<header class="major">	<h2>Sustainable Plants Based Foods</h2>	</header>
+					
+					<div class="row">
+
+
+						<?php
+                            $angelsoft_args = array(
+                                'post_type'	=> 'naturalfood',
+								'category_name' => 'herbs-cat',
+                                'orderby' => 'rand',
+                                'posts_per_page'	=> 20,
+								'paged2' => $paged
+                            );
+                            $angelsoft_posts = new WP_Query($angelsoft_args);
+                            while ($angelsoft_posts->have_posts()) {
+                                $angelsoft_posts->the_post(); ?>
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="box">
+								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+                                    <?php the_post_thumbnail('custom-stateprofile-post') ?>
+								</a>
+								<header>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><h3><?php the_title() ?></h3></a>
+								</header>
+								<?php the_excerpt() ?>
+								<footer>
+									<ul class="actions">
+										<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
+									</ul>
+								</footer>
+							</section>
+						</div>
+						<?php
+                            } ?>	
+						<?php wp_reset_postdata() ?>
+						
+					</div>
+				</section>
+<!-- Pagination -->
+				<section>
+					
+					<div class="boxpaging"><h3>
+					<div style="margin: auto;  width: 20%;  border: 0px solid green;  padding: 10px;">
+                      <?php
+                      $total_pages = $angelsoft_posts->max_num_pages;
+
+                          if ($total_pages > 1){
+
+                              $current_page = max(1, get_query_var('paged2'));
+
+                              echo paginate_links(array(
+                                  'base' => get_pagenum_link(1) . '%_%',
+                                  'format' => '/page/%#%',
+                                  'current' => $current_page,
+                                  'total' => $total_pages,
+                                  'prev_text'    => __('« prev'),
+                                  'next_text'    => __('next »'),
+                              ));
+                          }
+                      ?>
+						<?php wp_reset_postdata() ?>
+					</div>						
+					</h3></div>
+				</section>
+<!-- Pagination -->  
 
             </div>
-            <?php get_sidebar("education") ?> 	
+            <?php get_sidebar("naturalfood") ?> 	
         </div>
     </div>
 </section>

@@ -18,6 +18,7 @@ get_header() ?>
                             <article class="box post">
                                 <a href="<?php the_permalink() ?>" class="image featured">
                                     <?php the_post_thumbnail('single-post') ?>
+                          			
                                 </a>
                                 <header>
                                     <h1><?php the_title() ?></h1>
@@ -38,35 +39,38 @@ get_header() ?>
 					<div class="row">
 
 
-						<?php
+						<?php 
                             $angelsoft_args = array(
                                 'post_type'	=> 'currentaffair',
-                                'orderby' => 'rand',
+                                'orderby' => 'DESC',
                                 'posts_per_page'	=> 20,
 								'paged' => $paged
                             );
                             $angelsoft_posts = new WP_Query($angelsoft_args);
                             while ($angelsoft_posts->have_posts()) {
                                 $angelsoft_posts->the_post(); ?>
-						<div class="col-3 col-6-medium col-12-small">
+						<div class="col-6 col-6-medium col-12-small">
 							<section class="box">
-								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
-                                    <?php the_post_thumbnail('single-post') ?>
+                              	
+								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image left">
+                                    <?php the_post_thumbnail('custom-stateprofile-post') ?>
+                              		 <?php // the_post_thumbnail() ?>
 								</a>
-								<header>
+                              	<header>
 									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><h3><?php the_title() ?></h3></a>
 								</header>
+								
 								<?php the_excerpt() ?>
+                              	<p><strong>Published on - </strong> <?php echo get_the_date(); ?></p>
 								<footer>
 									<ul class="actions">
-										<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+										<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 									</ul>
 								</footer>
 							</section>
 						</div>
 						<?php
-                            } ?>						
-						
+                           }  ?>		 
 					</div>
 				</section>
 <!-- Pagination -->

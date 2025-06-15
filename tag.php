@@ -1,10 +1,10 @@
 <?php
 /*
-* This is used to show catagory
-*/
+ * This template is used to display posts assigned to a specific tag.
+ * Save this as tag.php in your theme folder.
+ */
 
-get_header();
-
+get_header(); 
 ?>
 
 <!-- Main -->
@@ -12,40 +12,55 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-12 col-12-medium">
+
                 <?php
-                    if(have_posts()) {
-                        while(have_posts()) {
-                            the_post(); ?>
-                            <div class="col-6 col-12-small">
+                // Get the current tag object
+                if (is_tag()) {
+                    $tag = get_queried_object();
+                    echo '<h1>Posts for tag: ' . esc_html($tag->name) . '</h1>';
+                    if (!empty($tag->description)) {
+                        echo '<p>' . esc_html($tag->description) . '</p>';
+                    }
+                }
+                ?>
+
+                <?php if (have_posts()) : ?>
+                    <div class="row">
+                        <?php while (have_posts()) : the_post(); ?>
+                            <div class="col-12 col-12-small">
                                 <section class="box">
-                                    <a href="<?php the_permalink() ?>" class="image left">
-                                        <?php the_post_thumbnail( array(200,200) ); ?>
+                                    <a href="<?php the_permalink(); ?>" class="image left">
+                                        <?php the_post_thumbnail(); ?>
                                     </a>
                                     <header>
-                                        <h3><?php the_title() ?></h3>
-                                        <p>Posted on <?php the_date() ?> at <?php the_time() ?></p>
+                                        <h3><?php the_title(); ?></h3>
+                                        <p>Posted on <?php the_time(get_option('date_format')); ?> at <?php the_time(); ?></p>
                                     </header>
-                                    <?php the_excerpt() ?>
+                                    <?php the_excerpt(); ?>
                                     <footer>
                                         <ul class="actions">
-                                            <li><a href="<?php the_permalink() ?>" class="button icon solid fa-file-alt">More</a></li>
-                                        <!--    <li><a href="<?php comments_link() ?>" class="button alt icon solid fa-comment"><?php echo get_comments_number( ) ?> comments</a></li> -->
+                                            <li>
+                                                <li><a href="<?php the_permalink() ?>" class="button icon solid fa-file-alt">Check out all about <?php the_title() ?></a></li>
+                                                <!--  <a href="<?php the_permalink(); ?>" class="button icon solid fa-file-alt">Read more</a> -->
+                                            </li>
+                                            <!-- Optionally add comment count here -->
+                                            <!-- <li><a href="<?php comments_link(); ?>" class="button alt icon solid fa-comment"><?php echo get_comments_number(); ?> comments</a></li> -->
                                         </ul>
                                     </footer>
-                            		
                                 </section>
                             </div>
-                          
-                          
-                          
-                    <?php }
-                    }
-                ?>
-                
+                        <?php endwhile; ?>
+                    </div>
+                <?php else : ?>
+                    <p>No posts found with this tag.</p>
+                <?php endif; ?>
+
+                <?php wp_reset_postdata(); ?>
 
             </div>
             
         </div>
     </div>
 </section>
-<?php get_footer() ?>
+
+<?php get_footer(); ?>

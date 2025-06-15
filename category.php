@@ -19,7 +19,8 @@ get_header();
                             <div class="col-6 col-12-small">
                                 <section class="box">
                                     <a href="<?php the_permalink() ?>" class="image left">
-                                        <?php the_post_thumbnail( array(200,200) ); ?>
+                                        <?php // the_post_thumbnail( array(200,200) ); ?>
+                          				<?php the_post_thumbnail(); ?>
                                     </a>
                                     <header>
                                         <h3><?php the_title() ?></h3>
@@ -28,7 +29,7 @@ get_header();
                                     <?php the_excerpt() ?>
                                     <footer>
                                         <ul class="actions">
-                                            <li><a href="<?php the_permalink() ?>" class="button icon solid fa-file-alt">More</a></li>
+                                            <li><a href="<?php the_permalink() ?>" class="button icon solid fa-file-alt">Check out all about <?php the_title() ?></a></li>
                                         <!--    <li><a href="<?php comments_link() ?>" class="button alt icon solid fa-comment"><?php echo get_comments_number( ) ?> comments</a></li> -->
                                         </ul>
                                     </footer>

@@ -55,7 +55,9 @@ function sc_remove_menus()
     global $menu;
     // this is an array of the menu item names we wish to remove
     //$restricted = array( __('Links'),__('Tools'),__('Comments'), __('Media'), __('Settings'));
-    $restricted = array( __('Plugins'), __('Tools'), __('Comments'));
+    //$restricted = array( __('Plugins'), __('Tools'), __('Comments'));
+    //$restricted = array( __('Tools'), __('Comments'));
+  	$restricted = array( __('Comments'));
     //$restricted = array( __('Tools'), __('Settings'));
     //$restricted = array( __('Tools'));
     end($menu);

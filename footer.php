@@ -67,5 +67,30 @@
 </section>
 </div>
     <?php wp_footer() ?>
+
+<!-- Your other footer content -->
+
+<!-- Add your custom JavaScript code just before the closing </body> tag -->
+<script>
+  // Listen for the 'pagehide' event
+  window.addEventListener('pagehide', function(event) {
+    console.log('Page is being unloaded or hidden');
+    // Perform any necessary cleanup tasks here
+  });
+
+  // Listen for the 'visibilitychange' event
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+      console.log('Page is hidden');
+      // Perform tasks like pausing media or saving state
+    } else {
+      console.log('Page is visible');
+    }
+  });
+</script>
+
+</body>
+
+
 </body>
 </html>

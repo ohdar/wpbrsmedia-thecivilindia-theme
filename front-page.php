@@ -94,16 +94,16 @@
 									$service_posts->the_post(); ?>
 							<div class="col-3 col-12-small">
 								<section class="box">
-									<a href="<?php the_permalink() ?>" class="image featured">
-									<?php the_post_thumbnail('home-featured') ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"  class="image featured">
+									<?php the_post_thumbnail('custom-cityprofile-post') ?>
 									</a>
 									<header>
-										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+										<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><h3><?php the_title() ?></h3></a>
 									</header>
 									<?php the_excerpt() ?>
 									<footer>
 										<ul class="actions">
-											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+											<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 										</ul>
 									</footer>
 								</section>
@@ -116,16 +116,16 @@
 					</section> 
 
 				
-					<!-- Political Parties -->
+					<!-- Indian Rivers -->
 					<section>
 						<header class="major">
-							<h2>Political Parties</h2>
+							<h2>Rivers of India</h2>
 						</header>
 						<div class="row">
 
 							<?php
 								$portfolio_args = array(
-									'post_type'	=> 'politics',
+									'post_type'	=> 'indianrivers',
 									'orderby' => 'rand',
 									'posts_per_page'	=> 4
 								);
@@ -134,16 +134,16 @@
 									$portfolio_posts->the_post(); ?>
 							<div class="col-3 col-12-small">
 								<section class="box">
-									<a href="<?php the_permalink() ?>" class="image featured">
-									<?php the_post_thumbnail('home-featured') ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+									<?php the_post_thumbnail('custom-cityprofile-post') ?>
 									</a>
 									<header>
-										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+										<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><h3><?php the_title() ?></h3></a>
 									</header>
 									<?php the_excerpt() ?>
 									<footer>
 										<ul class="actions">
-											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+											<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 										</ul>
 									</footer>
 								</section>
@@ -156,16 +156,16 @@
 					</section> 
 
 				
-					<!-- Education In India -->
+					<!-- Natural Foods In India -->
 					<section>
 						<header class="major">
-							<h2>Education</h2>
+							<h2>Foods Sources</h2>
 						</header>
 						<div class="row">
 
 							<?php
 								$portfolio_args = array(
-									'post_type'	=> 'education',
+									'post_type'	=> 'naturalfood',
 									'orderby' => 'rand',
 									'posts_per_page'	=> 4
 								);
@@ -174,16 +174,16 @@
 									$portfolio_posts->the_post(); ?>
 							<div class="col-3 col-12-small">
 								<section class="box">
-									<a href="<?php the_permalink() ?>" class="image featured">
-									<?php the_post_thumbnail('home-featured') ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+									<?php the_post_thumbnail('custom-cityprofile-post') ?>
 									</a>
 									<header>
-										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+										<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><h3><?php the_title() ?></h3></a>
 									</header>
 									<?php the_excerpt() ?>
 									<footer>
 										<ul class="actions">
-											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+											<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 										</ul>
 									</footer>
 								</section>
@@ -214,16 +214,16 @@
 									$portfolio_posts->the_post(); ?>
 							<div class="col-3 col-12-small">
 								<section class="box">
-									<a href="<?php the_permalink() ?>" class="image featured">
-									<?php the_post_thumbnail('home-featured') ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+									<?php the_post_thumbnail('custom-cityprofile-post') ?>
 									</a>
 									<header>
-										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+										<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><h3><?php the_title() ?></h3></a>
 									</header>
 									<?php the_excerpt() ?>
 									<footer>
 										<ul class="actions">
-											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+											<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 										</ul>
 									</footer>
 								</section>
@@ -254,16 +254,16 @@
 									$portfolio_posts->the_post(); ?>
 							<div class="col-3 col-12-small">
 								<section class="box">
-									<a href="<?php the_permalink() ?>" class="image featured">
-									<?php the_post_thumbnail('home-featured') ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+									<?php the_post_thumbnail('custom-cityprofile-post') ?>
 									</a>
 									<header>
-										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+										<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><h3><?php the_title() ?></h3></a>
 									</header>
 									<?php the_excerpt() ?>
 									<footer>
 										<ul class="actions">
-											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+											<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 										</ul>
 									</footer>
 								</section>
@@ -276,16 +276,16 @@
 					</section> 
 
 				
-					<!-- Banking -->
+					<!-- State Profiles -->
 					<section>
 						<header class="major">
-							<h2>Banking</h2>
+							<h2>State Profiles</h2>
 						</header>
 						<div class="row">
 
 							<?php
 								$portfolio_args = array(
-									'post_type'	=> 'banking',
+									'post_type'	=> 'stateprofile',
 									'orderby' => 'rand',
 									'posts_per_page'	=> 4
 								);
@@ -294,16 +294,16 @@
 									$portfolio_posts->the_post(); ?>
 							<div class="col-3 col-12-small">
 								<section class="box">
-									<a href="<?php the_permalink() ?>" class="image featured">
-									<?php the_post_thumbnail('home-featured') ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+									<?php the_post_thumbnail('custom-cityprofile-post') ?>
 									</a>
 									<header>
-										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+										<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><h3><?php the_title() ?></h3></a>
 									</header>
 									<?php the_excerpt() ?>
 									<footer>
 										<ul class="actions">
-											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+											<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 										</ul>
 									</footer>
 								</section>
@@ -334,16 +334,16 @@
 									$portfolio_posts->the_post(); ?>
 							<div class="col-3 col-12-small">
 								<section class="box">
-									<a href="<?php the_permalink() ?>" class="image featured">
-									<?php the_post_thumbnail('home-featured') ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+									<?php the_post_thumbnail('custom-cityprofile-post') ?>
 									</a>
 									<header>
-										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+										<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><h3><?php the_title() ?></h3></a>
 									</header>
 									<?php the_excerpt() ?>
 									<footer>
 										<ul class="actions">
-											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+											<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 										</ul>
 									</footer>
 								</section>
@@ -374,16 +374,16 @@
 									$portfolio_posts->the_post(); ?>
 							<div class="col-3 col-12-small">
 								<section class="box">
-									<a href="<?php the_permalink() ?>" class="image featured">
-									<?php the_post_thumbnail('home-featured') ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+									<?php the_post_thumbnail('custom-cityprofile-post') ?>
 									</a>
 									<header>
-										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+										<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><h3><?php the_title() ?></h3></a>
 									</header>
 									<?php the_excerpt() ?>
 									<footer>
 										<ul class="actions">
-											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+											<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 										</ul>
 									</footer>
 								</section>
@@ -415,16 +415,16 @@
 									$blog_posts->the_post(); ?>
 							<div class="col-3 col-12-small">
 								<section class="box">
-									<a href="<?php the_permalink() ?>" class="image featured">
-										<?php the_post_thumbnail('home-featured') ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+										<?php the_post_thumbnail('custom-cityprofile-post') ?>
 									</a>
 									<header>
-										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>	
+										<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><h3><?php the_title() ?></h3></a>	
 									</header>
 									<?php the_excerpt() ?>
 									<footer>
 										<ul class="actions">
-											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+											<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 											
 										</ul>
 									</footer>
@@ -432,6 +432,7 @@
 							</div>
 							<?php
 								} ?>
+							<?php wp_reset_postdata() ?>
 							
 						</div>
 					</section>
@@ -454,16 +455,16 @@
 									$portfolio_posts->the_post(); ?>
 							<div class="col-3 col-12-small">
 								<section class="box">
-									<a href="<?php the_permalink() ?>" class="image featured">
-									<?php the_post_thumbnail('home-featured') ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+									<?php the_post_thumbnail('custom-cityprofile-post') ?>
 									</a>
 									<header>
-										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
+										<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><h3><?php the_title() ?></h3></a>
 									</header>
 									<?php the_excerpt() ?>
 									<footer>
 										<ul class="actions">
-											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+											<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 										</ul>
 									</footer>
 								</section>
@@ -492,16 +493,16 @@
 									$blog_posts->the_post(); ?>
 							<div class="col-3 col-12-small">
 								<section class="box">
-									<a href="<?php the_permalink() ?>" class="image featured">
-										<?php the_post_thumbnail('home-featured') ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
+										<?php the_post_thumbnail('custom-cityprofile-post') ?>
 									</a>
 									<header>
-										<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>	
+										<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><h3><?php the_title() ?></h3></a>	
 									</header>
 									<?php the_excerpt() ?>
 									<footer>
 										<ul class="actions">
-											<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+											<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 											
 										</ul>
 									</footer>
@@ -509,6 +510,8 @@
 							</div>
 							<?php
 								} ?>
+								
+							<?php wp_reset_postdata() ?>
 							
 						</div>
 					</section>
@@ -521,6 +524,7 @@
 							foreach( $categories as $category) { 
 							// echo $category->cat_name . ' ';
 								echo '<li class="x-label x-label-0">' . $category->cat_name . '</li>';
+								//echo '<li class="x-label x-label-0"><a class="x-label-0" href="' . get_category_link($category->term_id) . '">' . $category->cat_name . '</a></li>';
 							} 
 							echo '</ul></div></section></div>';
 					?>

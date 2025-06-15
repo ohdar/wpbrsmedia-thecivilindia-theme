@@ -42,7 +42,7 @@ get_header() ?>
                             $angelsoft_args = array(
                                 'post_type'	=> 'cityprofile',
                                 'orderby' => 'rand',
-                                'posts_per_page'	=> 20,
+                                'posts_per_page'	=> 32,
 								'paged' => $paged
                             );
                             $angelsoft_posts = new WP_Query($angelsoft_args);
@@ -51,7 +51,7 @@ get_header() ?>
 						<div class="col-3 col-6-medium col-12-small">
 							<section class="box">
 								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
-                                    <?php the_post_thumbnail('single-post') ?>
+                                    <?php the_post_thumbnail('custom-cityprofile-post') ?>
 								</a>
 								<header>
 									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><h3><?php the_title() ?></h3></a>
@@ -59,7 +59,7 @@ get_header() ?>
 								<?php the_excerpt() ?>
 								<footer>
 									<ul class="actions">
-										<li><a href="<?php the_permalink() ?>" class="button alt">More</a></li>
+										<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button alt">Check out all about <?php the_title() ?></a></li>
 									</ul>
 								</footer>
 							</section>

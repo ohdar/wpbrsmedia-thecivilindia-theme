@@ -52,7 +52,7 @@ get_header() ?>
 						<div class="col-3 col-12-small">
 							<section class="box">
 								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="image featured">
-									<?php the_post_thumbnail('home-featured') ?>
+									<?php the_post_thumbnail('custom-cityprofile-post') ?>
 								</a>
 								<header>
 									<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><h3><?php the_title() ?></h3></a>									
@@ -60,7 +60,7 @@ get_header() ?>
 								<?php the_excerpt() ?>
 								<footer>
 									<ul class="actions">
-										<li><a href="<?php the_permalink() ?>" class="button icon solid fa-file-alt">More</a></li>
+										<li><a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>" class="button icon solid fa-file-alt">Check out all about <?php the_title() ?></a></li>
 										
 									</ul>
 								</footer>
@@ -77,7 +77,7 @@ get_header() ?>
                             $blog_args = array(
                                 'post_type'	=> 'ytchannel',
 								'orderby' => 'rand',
-                                'posts_per_page'	=> 8,	
+                                'posts_per_page'	=> 4,	
                             );
                             $blog_posts = new WP_Query($blog_args);
                             while ($blog_posts->have_posts()) {
@@ -110,7 +110,7 @@ get_header() ?>
                             $blog_args = array(
                                 'post_type'	=> get_post_type( $post->ID ),								
 								'orderby' => 'rand',
-                                'posts_per_page'	=> 12,	
+                                'posts_per_page'	=> 6,	
                             );
                             $blog_posts = new WP_Query($blog_args);
                             while ($blog_posts->have_posts()) {
@@ -122,7 +122,7 @@ get_header() ?>
 								</a>
 								
 								<?php // the_excerpt() ?>
-								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><?php the_excerpt_rss(); ?></a>
+								<a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>"><?php the_excerpt_rss(); ?></a>
                                
 							</section>
 						</div>
@@ -131,9 +131,64 @@ get_header() ?>
                             } ?>
 					</div>
 		</section>
+		
+		<section>
+					<!-- <header class="major"><h2>Further Readings </h2></header> 
+					<div class="row"> -->
+					<?php
+                        // Step 1: Get all registered post types, excluding 'post' and 'page'
+                        $post_types = get_post_types(array('public' => true), 'names');  // 'public' => true will include only public post types
+                        
+                        // Optionally, exclude default post types ('post', 'page')
+                        $post_types = array_diff($post_types, array('post', 'page' ,'ytchannel', 'quizzeslist'));
+                        
+                        // Step 2: Check if there are any custom post types
+                        if (!empty($post_types)) {
+                            // Step 3: Select a random post type from the array
+                            $random_post_type = $post_types[array_rand($post_types)]; ?>
+                        
+                        <header class="major"><h2>Further Readings <?php // echo $random_post_type ?> </h2></header>
+                        <div class="row">
+                        <?php
+                            // Step 4: Use the randomly selected post type in a WP_Query
+                            $args = array(
+                                'post_type'      => $random_post_type,
+                                'posts_per_page' => 6,  // Change this number as needed
+                                'orderby'         => 'rand',  // Order the posts randomly
+                                'post_status'     => 'publish',
+                            );
+                        
+                            $query = new WP_Query($args);
+                        
+                            // Step 5: Loop through the query results and display posts
+                            if ($query->have_posts()) {
+                                while ($query->have_posts()) {
+                                    $query->the_post(); ?>
+                                    <div class="col-2 col-12-small">
+            							<section class="box">
+        								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
+        									<h3><?php the_title() ?></h3>
+        								</a>
+        								
+        								<?php // the_excerpt() ?>
+        								<a href="<?php the_permalink() ?>" title="Click here to know more about <?php the_title() ?>"><?php the_excerpt_rss(); ?></a>
+                                       
+        							</section>
+        						    </div>
+                            <?php  }
+                                wp_reset_postdata();  // Reset post data after custom query
+                            } else {
+                                echo 'No posts found.';
+                            }
+                        } else {
+                            echo 'No custom post types found.';
+                        }
+                        ?>
+					</div>
+		</section>
 
 
-<?php
+<?php /*
         //Create WordPress Query with 'orderby' set to 'rand' (Random)
         $the_query = new WP_Query( array ( 
 			'post_type'	=> 'administration',			
@@ -157,7 +212,7 @@ get_header() ?>
         endwhile;
         echo '</ol></div></section></div>';
         // Reset Post Data
-        wp_reset_postdata();
+        wp_reset_postdata(); */
 
  ?>
 

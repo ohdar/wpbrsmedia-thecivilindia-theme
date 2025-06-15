@@ -9,7 +9,7 @@ function wpbrsmedia_scripts()
 	// Enqueue own styles    
 	wp_enqueue_style('style', get_stylesheet_uri());
 
-    wp_register_style('wpbrsmedia-style', get_template_directory_uri(). '/assets/css/wpbrsmedia.css',array(),'1.0','all');    
+    wp_register_style('wpbrsmedia-style', get_template_directory_uri(). '/assets/css/wpbrsmedia.min.css',array(),'1.0','all');    
     wp_enqueue_style('wpbrsmedia-style');
     
     wp_enqueue_style('dashicons');
@@ -17,7 +17,8 @@ function wpbrsmedia_scripts()
 	wp_enqueue_style( 'wpbrsmedia-custom-menuclass', get_template_directory_uri() .'/assets/css/custom-menuclass.css', array(), false, 'all' );
 	// Enqueue own JS    
 	wp_deregister_script('jquery');
-    wp_register_script('jquery', get_template_directory_uri(). '/assets/js/jquery.min.js');
+    //wp_register_script('jquery', get_template_directory_uri(). '/assets/js/jquery.min.js');
+    wp_register_script('jquery', get_template_directory_uri(). '/assets/js/jquery-3.7.1.min.js');
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('wpbrsmedia-browser', get_template_directory_uri(). '/assets/js/browser.min.js');
